@@ -1,0 +1,57 @@
+#startBtn{
+
+    padding: 10px 25px;
+    float:right;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    
+  
+
+}
+
+#startBtn:hover {background-color: #fd7e14}
+#startBtn:visited {background-color: #fd7e14}
+#submitBtn:hover {background-color: #dc3545}
+
+#submitBtn
+{
+    margin-left: 20px;
+    padding: 10px 25px;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    
+
+}
+#timer{
+   float:right;
+   background-color: white;
+   position: relative;
+   top: 50px;
+   right:-250px;
+}
+
+.headingBlk{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    background-color: white;
+}
+
+
+#startBtn:active{
+    background-color: #fd7e14 !important;
+}
+#startBtn:focus{
+    background-color: #fd7e14 !important;
+}

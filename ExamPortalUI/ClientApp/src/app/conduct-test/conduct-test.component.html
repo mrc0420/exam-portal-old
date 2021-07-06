@@ -1,0 +1,43 @@
+
+
+
+<div class="headingBlk">
+<h2>{{course}} Questions</h2>
+<input  id="submitBtn"      type="submit" (click) ='scoreCalculator()'>
+<button style="background-color: clr" id= "startBtn"  (click)='showQuestions()' [attr.disabled]=swtchAttr>StartExam</button>
+<span id="timer"><b>{{timeHr}} Hr:{{timeMin}} Min:{{timeSec}} Sec</b></span>
+</div>
+
+<div id="main" style="display:none">
+
+
+
+
+  <ol>
+    <li *ngFor='let question of tQuestions; index as i'>
+       {{question.question}}
+       <div class="options">
+         <ol type="a" >
+          
+            <li > <input type="radio"  name=Option{{i}}  (click)='disableOption(i)'  [attr.disabled]=flag[i]>{{question.option1}}</li>
+            <li > <input type="radio"  name=Option{{i}}  (click)='disableOption(i)'   [attr.disabled]=flag[i]>{{question.option2}}</li>
+            <li > <input type="radio" name=Option{{i}}    (click)='scoreBoard(i)'  [attr.disabled]=flag[i]>{{question.answer}}</li>
+            <input type="button" value="clear" (click)="clearResponse(i)">
+         </ol>
+       </div>
+    </li>
+    <div *ngFor="let c of scoreList">
+
+    </div>
+  </ol>
+  
+
+
+</div>
+
+
+
+
+
+
+

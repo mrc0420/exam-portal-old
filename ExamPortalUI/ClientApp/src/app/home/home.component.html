@@ -1,0 +1,46 @@
+<h1>Online Exam Portal</h1>
+
+
+
+
+
+
+<!--<div class="input-group mb-4">
+    <input type="text"  placeholder="Enter the course Name"  class="form-control"  [(ngModel)]=searchValue.search >
+    <div class="input-group-append">
+        <input id="button-addon5" type="button" (click)="Search()" value ="Search" class="btn btn-primary" >
+    </div>
+</div>-->
+
+<table class="table" *ngIf=flag>
+    <tr >
+        <th>Course Id</th>
+        <th>Course Name</th>
+        <th>Pass Percentage</th>
+    </tr>
+    <tr>
+        <td>{{searchedCourse.courseId}}</td>
+        <td>{{searchedCourse.courseName}}</td>
+        <td>{{searchedCourse.passPercentage}}</td>
+    </tr>
+
+</table>
+{{message}}
+
+<a routerLink='/exam'><button id='btn'>Conduct Test</button> </a>
+
+
+
+
+<div>
+
+    <br /><br />
+    <!-- <form [formGroup]="formdata"> -->
+
+    <h2>Exam Courses</h2>
+    <ul *ngFor='let course of courses'>
+        <li>{{course.courseName}}</li>
+    </ul>
+
+
+</div>

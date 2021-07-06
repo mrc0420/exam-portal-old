@@ -1,0 +1,79 @@
+<div>
+  <button id="addQuestiostnBtn" (click)="AddQuestion()">Add Question/Hide Question</button>
+  <button id="viewQuestionBtn" (click)="ViewQuestions()">View Questions</button>
+  <button id= "timerBtn" (click) ='ExamTimerView()'>Set Exam Time</button>
+
+</div>
+
+
+
+
+
+
+<!-- Timer -->
+<div class="timer" *ngIf='timerattr'>
+   
+    <input type="time" id="TimerInput"  [(ngModel)]="timer"
+        min="00:10:00" max="1:00:00" />
+       <input type="button" value="Set Time" (click)="SetTime()">{{timer}}
+
+</div>
+
+
+
+
+
+
+<!-- add questions -->
+<div *ngIf="addattr">
+  <table class='table table-striped'>
+    <tr>
+      <th>Course Id</th>
+      <th>Question Id</th>
+      <th>Question</th>
+      <th>Option1</th>
+      <th>Option2</th>
+      <th>Answer</th>
+    </tr>
+    <tr>
+      <td>
+        <select (change)="selectedCourse($event)">
+          <option>--choose course--</option>
+          <option *ngFor="let c of courses" [value]=c.courseId>{{c.courseName}}</option>
+        </select>
+      </td>
+      <td><input type="text" id="questionId" [(ngModel)]=adminQuestion.questionId></td>
+      <td><input type="text" id="question" [(ngModel)]=adminQuestion.question></td>
+
+      <td><input type="text" id="option1" [(ngModel)]=adminQuestion.option1></td>
+      <td><input type="text" id="option2" [(ngModel)]=adminQuestion.option2></td>
+      <td><input type="text" id="answer" [(ngModel)]=adminQuestion.answer></td>
+
+    </tr>
+  </table>
+  <input type="button" value="Submit" (click)=" submitQuestions()">
+</div>
+
+<!-- view Questions -->
+<div class="deleteDiv" *ngIf="viewattr ">
+
+  <table  class='table table-striped'>
+    <tr>
+      <th>Course Id
+          <select (change)="GetCourse($event)">
+              <option>--choose course--</option>
+              <option *ngFor="let c of courses" [value]=c.courseId>{{c.courseName}}</option>
+            </select>
+      </th>
+      <th>Question Id</th>
+      <th>Question</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let q of adminQuestion">
+      <td></td>
+      <td>{{q.questionId}}</td>
+      <td>{{q.question}}</td>
+      <td><input type="button" id="deleteBtn" value="Delete" (click)="DeleteQuestion(q.questionId)"> </td>
+    </tr>
+  </table>
+</div>

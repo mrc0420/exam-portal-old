@@ -1,0 +1,12 @@
+<p>
+  exam works!
+</p>
+
+<select (change)="selectedCourse($event)">
+    <option>--choose course--</option>
+    <option *ngFor="let course of courses" [value] =course.courseId>{{course.courseName}}</option>
+</select>
+
+<p><span>Course selected: </span> <b>{{courseSelected}}</b> </p> 
+<p><span>Pass Percentage: </span> <b>{{percentage}}</b></p>
+<a routerLink='/conductTest'><button>Take Exam</button></a>

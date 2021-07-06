@@ -1,0 +1,9 @@
+C:\Users\rahiz.c\source\repos\OnlineExamPortal\Domain.User.Abstract\bin\Debug\netcoreapp2.2\Domain.User.Abstract.deps.json
+C:\Users\rahiz.c\source\repos\OnlineExamPortal\Domain.User.Abstract\bin\Debug\netcoreapp2.2\Domain.User.Abstract.dll
+C:\Users\rahiz.c\source\repos\OnlineExamPortal\Domain.User.Abstract\bin\Debug\netcoreapp2.2\Domain.User.Abstract.pdb
+C:\Users\rahiz.c\source\repos\OnlineExamPortal\Domain.User.Abstract\obj\Debug\netcoreapp2.2\Domain.User.Abstract.csprojAssemblyReference.cache
+C:\Users\rahiz.c\source\repos\OnlineExamPortal\Domain.User.Abstract\obj\Debug\netcoreapp2.2\Domain.User.Abstract.csproj.CoreCompileInputs.cache
+C:\Users\rahiz.c\source\repos\OnlineExamPortal\Domain.User.Abstract\obj\Debug\netcoreapp2.2\Domain.User.Abstract.AssemblyInfoInputs.cache
+C:\Users\rahiz.c\source\repos\OnlineExamPortal\Domain.User.Abstract\obj\Debug\netcoreapp2.2\Domain.User.Abstract.AssemblyInfo.cs
+C:\Users\rahiz.c\source\repos\OnlineExamPortal\Domain.User.Abstract\obj\Debug\netcoreapp2.2\Domain.User.Abstract.dll
+C:\Users\rahiz.c\source\repos\OnlineExamPortal\Domain.User.Abstract\obj\Debug\netcoreapp2.2\Domain.User.Abstract.pdb

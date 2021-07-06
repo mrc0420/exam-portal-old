@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "Domain.Course/1.0.0": {
+        "dependencies": {
+          "Domain.Course.Abstract": "1.0.0"
+        },
+        "runtime": {
+          "Domain.Course.dll": {}
+        }
+      },
+      "Domain.Course.Abstract/1.0.0": {
+        "runtime": {
+          "Domain.Course.Abstract.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Domain.Course/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain.Course.Abstract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
